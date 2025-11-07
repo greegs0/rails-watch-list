@@ -1,2 +1,11 @@
-<h1>Lists#new</h1>
-<p>Find me in app/views/lists/new.html.erb</p>
+<h1 class="mb-4">New List</h1>
+
+<%= simple_form_for(@list) do |f| %>
+  <div class="row">
+    <div class="col-md-6">
+      <%= f.input :name, input_html: { autofocus: true } %>
+      <%= f.submit "Create list", class: "btn btn-success" %>
+      <%= link_to "Back", lists_path, class: "btn btn-link" %>
+    </div>
+  </div>
+<% end %>

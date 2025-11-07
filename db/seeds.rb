@@ -18,4 +18,4 @@ data["results"].each do |movie|
   )
 end
 
-puts "✅ #{Movie.count} movies created!"
+puts "#{Movie.count} movies created!"
