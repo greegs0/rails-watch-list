@@ -4,6 +4,7 @@
   <div class="row">
     <div class="col-md-6">
       <%= f.input :name, input_html: { autofocus: true } %>
+      <%= f.input :photo, as: :file %>
       <%= f.submit "Create list", class: "btn btn-success" %>
       <%= link_to "Back", lists_path, class: "btn btn-link" %>
     </div>
